@@ -1,0 +1,66 @@
+name: todo_app
+description: "A new Flutter project."
+ 
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+ 
+  #? for dependency injection
+  get_it: ^7.6.7
+  #? storage for simple data in local storage
+  shared_preferences: ^2.2.2
+  #? An SVG rendering and widget library for Flutter, which allows painting
+  flutter_svg: ^2.0.10+1
+  #? for adapting screen and font size.
+  flutter_screenutil: ^5.9.0
+  #? State management
+  flutter_bloc: ^8.1.6
+  #? This library defines the DateFormat and NumberFormat
+  intl: ^0.19.0
+  #? Date Picker Library that provides a calendar as a horizontal timeline.
+  date_picker_timeline: ^1.2.6
+  #? SQLite, a self-contained, high-reliability, embedded, SQL database engine.
+  sqflite: ^2.3.3+1
+  #? Iconly Icons
+  iconly: ^1.0.1
+  #? Flutter Toast
+  fluttertoast: ^8.2.6
+  #? Flutter Staggered Animations
+  flutter_staggered_animations: ^1.1.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  #? A package which simplifies the task of updating your Flutter app's launcher icon
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+      - family: Lato
+        fonts:
+          - asset: assets/fonts/Lato-Regular.ttf
+          - asset: assets/fonts/Lato-Bold.ttf
+            weight: 700
+
+ 
+
+ 
